@@ -1,8 +1,16 @@
 package org.example.entity;
 
-public class User extends Base{
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class User implements Serializable {
+
     private Long id;
-    private String username;
-    private String password;
-    //类别
+    private String userName;
+    private String passWord;
+    private String userSex;
+    private String nickName;
+
 }
